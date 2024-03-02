@@ -6,8 +6,8 @@ const api_response = require("../utils/api_response");
 const create_task = asyncHandler(async (req, res) => {
   const task = new Task({ ...req.body, createdBy: req.userId });
 
-  const newTask = new Task(req.body);
-  const savedTask = await task.save();
+  // const newTask = new Task(req.body);
+  // const savedTask = await task.save();
 
   return res
     .status(200)
